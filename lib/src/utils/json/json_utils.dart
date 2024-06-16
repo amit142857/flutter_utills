@@ -17,7 +17,7 @@ class JsonUtils {
     }
   }
 
-  /// Parses ```map[key]``` and returns Json object
-  static decodeJson(Map map, String key) =>
-      JsonValueReader.decodeJson(map, key);
+  /// Parses ```source``` and returns Json object
+  static decodeJson(String source) =>
+      JsonValueReader.decodeJson({'data': source}, 'data');
 }
